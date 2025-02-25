@@ -3584,7 +3584,7 @@ def abrir_ventana_graficos():
     label_frame_datos = tk.LabelFrame(label_frame_graficos,text="Exportar/Generar")
     label_frame_datos.place(x=380,y=410,width=165,height=110)
     
-    boton_generar_pdf = ttk.Button(label_frame_datos,text="Generar",command=generar_pdf)
+    boton_generar_pdf = ttk.Button(label_frame_datos,text="Generar")
     boton_generar_pdf.place(x=30,y=50,width=100)
     
     boton_exportar_datos = ttk.Button(label_frame_datos,text="Exportar",command=exportar_datos_a_excel)
@@ -3884,35 +3884,7 @@ label_graficos_M = None  # Definir esto según sea necesario
 # Variable global para la figura
 fig = None
 
-# Ruta relativa para guardar el archivo PDF
-ruta_guardar = os.path.join("Archivos_Pilot", "pdf")
 
-# Función para generar el PDF
-def generar_pdf():
-    global fig  # Usar la figura global
-    if fig is None:
-        print("Error: No se ha generado ningún gráfico para guardar.")
-        return
-
-    # Crear el PDF
-    pdf = FPDF()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.add_page()
-
-    # Configurar el título
-    pdf.set_font('Arial', 'B', 16)
-    pdf.cell(200, 10, txt="Gráficos de Cortante y Momento Flector", ln=True, align="C")
-
-    # Agregar imágenes de los gráficos
-    pdf.ln(10)  # Espacio entre el título y la imagen
-    imagen_path = os.path.join(ruta_guardar, "grafico.png")  # Ruta para guardar la imagen del gráfico
-    fig.savefig(imagen_path, format="png")  # Guardar el gráfico como imagen PNG
-    pdf.image(imagen_path, x=10, y=40, w=180)
-
-    # Guardar el PDF
-    pdf_output_path = os.path.join(ruta_guardar, "diagrama_cortante_momento.pdf")  # Ruta para guardar el PDF
-    pdf.output(pdf_output_path)
-    print(f"PDF generado y guardado en: {pdf_output_path}")
 
 # Función para actualizar los valores de Momento_Mu
 def actualizar_momento_mu():
