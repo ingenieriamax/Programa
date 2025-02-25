@@ -1,0 +1,12 @@
+luz_seccion:6
+base_seccion:0.40
+altura_seccion:0.50
+recubrimiento_seccion:0.05
+d_seccion:0.45
+nombre_seccion:VG 40.0 X 50.0
+resumen_1:Elemento viga,sección - VG 40.0 X 50.0
+resumen_2:La viga presenta una luz de 6 metros.
+resumen_3:La viga presenta una base de 0.40 metros.
+resumen_4:La viga presenta una altura de 0.5 metros
+resumen_5:El recubrimiento a emplear será de 5.0 cm
+resumen_6:La altura efectiva a utilizar es de 0.45 metros
