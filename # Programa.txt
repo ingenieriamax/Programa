@@ -10,7 +10,6 @@ from tkinter import ttk, messagebox, filedialog,Toplevel,simpledialog
 from tkinter import Scale, Frame, Entry, Label, NORMAL, DISABLED, END, HORIZONTAL
 from tkinter import StringVar, PhotoImage
 import time
-import requests
 import platform
 from datetime import datetime
 from pytz import timezone
