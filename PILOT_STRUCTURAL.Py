@@ -9610,7 +9610,7 @@ def Calcular_Av():
         #print("Actualizando label_Av_requerida...")
     
     except ValueError:
-        #print("Error: Los valores deben ser numéricos.")
+        print("Error: Los valores deben ser numéricos.")
 
 def Calcular_numero_ramas():
     try:
