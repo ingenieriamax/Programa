@@ -1,0 +1,3 @@
+resistencia_concreto:Concreto 4000 Psi
+modulo_concreto:20636.86 MPa
+mensaje_materiales: Has seleccionado el material 28 Mpa. Ahora,el siguiente paso es definir las propiedades geométricas de la sección transversal.
