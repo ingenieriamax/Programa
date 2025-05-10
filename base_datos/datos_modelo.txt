@@ -1,5 +1,0 @@
-nombre_usuario:Juan David Garzón Obando
-nombre_modelo:Pilot Structural
-detalles_modelo:Diseño de vigas de concreto reforzado.
-combo_concreto:f'c = 21 MPa
-combo_acero:fy = 420 MPa
